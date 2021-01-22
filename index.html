@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <!-- Style  -->
+    <style>
+        .section {
+            margin-top: 2em;
+        }
+    </style>
+    <title>My Project</title>
+</head>
+
+<body>
+
+    <!-- Style  -->
+    <div id="app">
+        lel
+    </div>
+
+
+
+    <!-- Javascript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    authstatus: false
+                };
+            },
+            methods: {
+                setAuthStatus(val) {
+                    console.log("Setting authstatus through event to: ", val);
+                    this.authstatus = val;
+                    console.log("New value: ", app.authstatus);
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
